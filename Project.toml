@@ -4,6 +4,20 @@ authors = ["Nikolas Siccha <nikolassiccha@gmail.com>"]
 version = "0.1.0"
 
 [deps]
+AbstractMCMC = "80f14c24-f653-4e6a-9b94-39d6b0f70001"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 LogExpFunctions = "2ab3a3ac-af41-5b50-aa03-7779005ae688"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[extensions]
+NUTSDynamicPPLExt = ["DynamicPPL"]
+
+[weakdeps]
+DynamicPPL = "366bfd00-2699-11ea-058f-f148b4cae6d8"
+
+[compat]
+AbstractMCMC = "5.10.0"
+DynamicPPL = "0.39"
+LinearAlgebra = "1"
+LogExpFunctions = "0.3"
+Random = "1"

@@ -240,4 +240,6 @@ else
 end
 
 
+include("abstractmcmc.jl")
+
 end # module NUTS
